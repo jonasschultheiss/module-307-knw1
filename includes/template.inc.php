@@ -39,7 +39,7 @@
       <div class="content">
         <h1><?php print($page_titel); ?></h1>
         <?php 
-			include("includes/product_visualizer.php");
+			include("content/".$page_content);
         ?>
       </div>
     </div>
