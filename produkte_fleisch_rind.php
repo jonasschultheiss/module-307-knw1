@@ -6,6 +6,7 @@ $page_content = "text_produkte_fleisch_rind.php";
 $page_news = true;
 $category = "beef";
 
+
 //Template includen
 include("includes/products_template.inc.php");
 ?>

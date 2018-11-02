@@ -1,4 +1,5 @@
 <?php
+
 //Seiten Parameter setzen
 $page_titel = "Unsere Kontaktdaten";
 $page_kurztitel = "Kontakt";

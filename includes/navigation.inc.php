@@ -14,5 +14,6 @@
 	  </li>
 	  <li<?php if(basename($_SERVER['SCRIPT_NAME']) == "oeffnungszeiten.php") print(' class="selected"'); ?>><a href="oeffnungszeiten.php">Öffnungszeiten</a></li>
 	  <li<?php if(basename($_SERVER['SCRIPT_NAME']) == "kontakt.php") print(' class="selected"'); ?>><a href="kontakt.php">Kontakt</a></li>
+	  <li<?php if(basename($_SERVER['SCRIPT_NAME']) == "shopping_cart.php") print(' class="selected"'); ?>><a href="shopping_cart.php">Einkaufswagen</a></li>
 	</ul>
 </nav>
