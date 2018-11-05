@@ -1,41 +1,41 @@
 <?php
-$save_data = json_decode(file_get_contents("products/products.json"), true);
-foreach ($save_data as $x => $x_value) {
-if ($x === "orders") {
-foreach ($x_value as $user => $user_values) {
-if ($_SESSION['id'] === $user_values['user_id']) {
-foreach ($user_values['orders'] as $key => $value) {
-    $total_value += $value['amount'] * $value['price'];
-    $rows .= '<tr>';
-    $rows .= '<td style="padding: 8px 8px 8px 0; border-bottom: 1px solid gray;">' . $value['name'] . '</td>';
-    $rows .= '<td style="padding: 8px 8px 8px 0; border-bottom: 1px solid gray;">' . $value['amount'] . '</td>';
-    $rows .= '<td style="padding: 8px 8px 8px 0; border-bottom: 1px solid gray;">' . $value['amount'] * $value['price'] . '</td>';
-    $rows .= '<td> <form action="../shopping_cart_remover.php" method="post"><input type="hidden" name="item" value=' . $value['name'] . '><input type="hidden" name="id" value=' . $_SESSION['id'] . '><button style="width: 300px; height: 25px; background-color: lightcoral;" type="submit">Entfernen</button></form></td>';
-    $rows .= '<tr>';
-}
-?>
+if (count($_SESSION['items']) === 0) {
+    echo "<h2>Dein Einkaufswagen ist leer.</h2>";
+} else {
+    foreach ($_SESSION['items'] as $key => $value) {
+        $total_value += $value['amount'] * $value['price'];
+        $rows .= '<tr>';
+        $rows .= '<td style="padding: 8px 8px 8px 0; border-bottom: 1px solid gray;">' . $value['name'] . '</td>';
+        $rows .= '<td style="padding: 8px 8px 8px 0; border-bottom: 1px solid gray;">' . $value['amount'] . '</td>';
+        $rows .= '<td style="padding: 8px 8px 8px 0; border-bottom: 1px solid gray;">' . $value['amount'] * $value['price'] . " CHF" . '</td>';
+        $rows .= '<td> <form action="../shopping_cart_remover.php" method="post"><input type="hidden" name="item" value="' . $value['name'] . '""><button style="width: 300px; height: 25px; background-color: lightcoral;" type="submit">Artikel entfernen</button></form></td>';
+        $rows .= '<tr>';
+    }
 
-<div style="width: 905px; border: 1px solid #FFFFFF; border-radius: 5px; padding: 20px;">
-    <h2>Artikel</h2>
+    ?>
+
+    <div style="width: 905px; border: 1px solid #FFFFFF; border-radius: 5px; padding: 20px;">
+        <h2>Artikel</h2>
         <table style="border-collapse: collapse; width: 100%;">
             <tr>
                 <th style="padding: 8px 8px 8px 0; border-bottom: 1px solid gray; text-align: left;">Artikel</th>
                 <th style="padding: 8px 8px 8px 0; border-bottom: 1px solid gray; text-align: left;">Anzahl</th>
                 <th style="padding: 8px 8px 8px 0; border-bottom: 1px solid gray; text-align: left;">Preis</th>
-                <th style="padding: 8px 8px 8px 0; border-bottom: 1px solid gray; text-align: left;">Artikel entfernen</th>
+                <th style="padding: 8px 8px 8px 0; border-bottom: 1px solid gray; text-align: left;">Artikel entfernen
+                </th>
             </tr>
             <?php echo $rows;
             ?>
         </table>
-    <?php
-    echo "Total: " . $total_value . "CHF";
-    ?>
+        <?php
+        echo "Total: " . $total_value . "CHF";
+        ?>
         <br/>
         <br/>
         <hr/>
         <br/>
-        <h2>Post details</h2>
-        <form action="" method="post">
+        <h2>Adresse</h2>
+        <form action="../order_finish.php" method="post">
             <p>Anrede</p>
             <label>
                 <select style="width: 300px; height: 25px" name="anrede">
@@ -91,9 +91,23 @@ foreach ($user_values['orders'] as $key => $value) {
             <br/>
             <hr/>
             <br/>
+            <h2>Versand</h2>
+            <label>
+                <input type="radio" name="versand" value="normal" required>
+            </label> B Post<br>
+            <label>
+                <input type="radio" name="versand" value="priority" required>
+            </label> A Post<br>
+            <label>
+                <input type="radio" name="versand" value="pickup" required>
+            </label> Abholung<br>
+            <br/>
+            <hr/>
+            <br/>
             <h2>Währungsrechner</h2>
             <?php
             echo "<p>CHF: " . $total_value . "<p/>";
+            $save_data = json_decode(file_get_contents("products/products.json"), true);
             foreach ($save_data as $x => $x_value) {
                 if ($x === "currency") {
                     foreach ($x_value as $currency => $currency_value) {
@@ -109,14 +123,7 @@ foreach ($user_values['orders'] as $key => $value) {
                 Bestellung abgeben
             </button>
         </form>
-        <?php
-        break;
-        } else {
-            echo "<h2>Dein Einkaufswagen ist leer.<h2/>";
-            break;
-        }
-        }
-        }
-        }
-        ?>
-</div>
+    </div>
+    <?php
+}
+?>

@@ -1,32 +1,7 @@
 <?php
 session_start();
-if(isset($_SESSION['id'])) {
-  echo "Your session is running " . $_SESSION['id'];
-} else {
-    $_SESSION["id"] = random_str(64);
-    $save_data = json_decode(file_get_contents("products/products.json"), true);
-    foreach (array_keys($save_data) as $x) {
-        if ($x === 'orders') {
-            array_push($save_data[$x], array(
-                "user_id" => $_SESSION['id'],
-                "orders" => array(
-                )));
-            break;
-        }
-    }
-    file_put_contents("products/products.json", json_encode($save_data));
-    echo "New Session " . $_SESSION['id'];
-}
-// Kopiert von StackOverflow. Ich will dem User einen random String geben, ohne eine web API zu verwenden, da ich es mir nicht unnötig komplizierter machen will.
-// quelle: https://stackoverflow.com/a/31107425/8726350
-function random_str($length, $keyspace = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ')
-{
-    $pieces = [];
-    $max = mb_strlen($keyspace, '8bit') - 1;
-    for ($i = 0; $i < $length; ++$i) {
-        $pieces []= $keyspace[random_int(0, $max)];
-    }
-    return implode('', $pieces);
+if(!isset($_SESSION['items'])) {
+    $_SESSION['items'] = array();
 }
 ?>
 
@@ -89,9 +64,7 @@ function random_str($length, $keyspace = '0123456789abcdefghijklmnopqrstuvwxyzAB
                     <h1>
                         <?php print($page_titel);?>
                     </h1>
-                    <?php
-                            include "products_visualizer.inc.php";
-                        ?>
+                    <?php include "products_visualizer.inc.php";?>
                 </div>
             </div>
             <footer>

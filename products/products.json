@@ -1,1 +1,55 @@
-{"products":[{"name":"Ganzes Kaninchen, zerlegt","description":"Ein ganzes Kaninchen, zerlegt und zum einfrieren vorbereitet.","category":"rabbit_meat","price":55,"image":"images\/kaninchen_zerlegt.jpg"},{"name":"Kaninchen W\u00fcrste","description":"Selbstgemachte, ger\u00e4ucherte Kaninchenw\u00fcrste. Preis pro Paar.","category":"rabbit_meat","price":34,"image":"images\/kaninchen_wuerste.jpg"},{"name":"Mischpaket Rindfleisch 10 - 12 kg","description":"Ein Mischpaket enth\u00e4lt von allem, was uns das Rind gibt. In der Regel ist ein Mischpaket 10 - 12 kg schwer.","category":"beef","price":340,"image":"images\/rind_mischpaket.jpg"},{"name":"Rindfilet","description":"Das Filet ist \u00e4usserst zart und ein absoluter Leckerbissen!","category":"beef","price":80,"image":"images\/rind_filet.jpg"},{"name":"Bienenhonig","description":"Feinster Schweizer Bienenhonig von unseren eigenen Bienen. Im Glas zu 500g.","category":"vegetable","price":10,"image":"images\/honig.jpg"},{"name":"Apfelmost","description":"Selbstgepresster Apfelmost aus unseren eigenen \u00c4pfel. Im der praktischen 10 Liter Box.","category":"vegetable","price":14,"image":"images\/most.jpg"}],"currency":{"Euro":0.86999999999999999555910790149937383830547332763671875,"Pounds":0.770000000000000017763568394002504646778106689453125,"USD":1,"Renminbi":6.9199999999999999289457264239899814128875732421875},"orders":[{"user_id":"ctwtcrYYRcd4wWNKJBoaSbSdwhWIXsZNF0pFN8Qe2FpnR7fUK6AOCTGJpFtc5tVz","orders":[{"name":"Rindfilet","price":"80","amount":"1"},{"name":"Rindfilet","price":"80","amount":"1"},{"name":"Rindfilet","price":"80","amount":"1"},{"name":"Rindfilet","price":"80","amount":"1"},{"name":"Rindfilet","price":"80","amount":"1"},{"name":"Rindfilet","price":"80","amount":"1"},{"name":"Rindfilet","price":"80","amount":"1"},{"name":"Rindfilet","price":"80","amount":"1"},{"name":"Rindfilet","price":"80","amount":"1"},{"name":"Rindfilet","price":"80","amount":"1"},{"name":"Rindfilet","price":"80","amount":"1"}]}]}
+{
+  "products": [
+    {
+      "name": "Ganzes Kaninchen, zerlegt",
+      "description": "Ein ganzes Kaninchen, zerlegt und zum einfrieren vorbereitet.",
+      "category": "rabbit_meat",
+      "price": 55,
+      "image": "images\/kaninchen_zerlegt.jpg"
+    },
+    {
+      "name": "Kaninchen W\u00fcrste",
+      "description": "Selbstgemachte, ger\u00e4ucherte Kaninchenw\u00fcrste. Preis pro Paar.",
+      "category": "rabbit_meat",
+      "price": 34,
+      "image": "images\/kaninchen_wuerste.jpg"
+    },
+    {
+      "name": "Mischpaket Rindfleisch 10 - 12 kg",
+      "description": "Ein Mischpaket enth\u00e4lt von allem, was uns das Rind gibt. In der Regel ist ein Mischpaket 10 - 12 kg schwer.",
+      "category": "beef",
+      "price": 340,
+      "image": "images\/rind_mischpaket.jpg"
+    },
+    {
+      "name": "Rindfilet",
+      "description": "Das Filet ist \u00e4usserst zart und ein absoluter Leckerbissen!",
+      "category": "beef",
+      "price": 80,
+      "image": "images\/rind_filet.jpg"
+    },
+    {
+      "name": "Bienenhonig",
+      "description": "Feinster Schweizer Bienenhonig von unseren eigenen Bienen. Im Glas zu 500g.",
+      "category": "vegetable",
+      "price": 10,
+      "image": "images\/honig.jpg"
+    },
+    {
+      "name": "Apfelmost",
+      "description": "Selbstgepresster Apfelmost aus unseren eigenen \u00c4pfel. Im der praktischen 10 Liter Box.",
+      "category": "vegetable",
+      "price": 14,
+      "image": "images\/most.jpg"
+    }
+  ],
+  "currency": {
+    "Euro": 0.86999999999999999555910790149937383830547332763671875,
+    "Pounds": 0.770000000000000017763568394002504646778106689453125,
+    "USD": 1,
+    "Renminbi": 6.9199999999999999289457264239899814128875732421875
+  },
+  "email": "jonas.schultheiss3@gmail.com",
+  "orders": [
+  ]
+}

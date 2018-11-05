@@ -1,21 +1,7 @@
 <?php
 session_start();
-if(isset($_SESSION['id'])) {
-  echo "Your session is running " . $_SESSION['id'];
-} else {
-    $_SESSION["id"] = random_str(64);
-    echo "New Session " . $_SESSION['id'];
-}
-// Kopiert von StackOverflow. Ich will dem User einen random String geben, ohne eine web API zu verwenden, da ich es mir nicht unnötig komplizierter machen will.
-// quelle: https://stackoverflow.com/a/31107425/8726350
-function random_str($length, $keyspace = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ')
-{
-    $pieces = [];
-    $max = mb_strlen($keyspace, '8bit') - 1;
-    for ($i = 0; $i < $length; ++$i) {
-        $pieces []= $keyspace[random_int(0, $max)];
-    }
-    return implode('', $pieces);
+if(!isset($_SESSION['items'])) {
+    $_SESSION['items'] = array();
 }
 ?>
 
