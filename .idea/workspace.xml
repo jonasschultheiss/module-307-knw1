@@ -1,23 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc3fd666-99c3-4f46-b85a-1cab9776a68c" name="Default Changelist" comment="i">
-      <change afterPath="$PROJECT_DIR$/includes/formular.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/product_visualizer.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/products_template.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/shopping_cart_handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/shopping_cart_template.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shopping_cart.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shopping_cart_adder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shopping_cart_remover.php" afterDir="false" />
+    <list default="true" id="dc3fd666-99c3-4f46-b85a-1cab9776a68c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/navigation.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/navigation.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/products_visualizer.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/products_visualizer.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kontakt.php" beforeDir="false" afterPath="$PROJECT_DIR$/kontakt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/products.json" beforeDir="false" afterPath="$PROJECT_DIR$/products/products.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produkte_fleisch_rind.php" beforeDir="false" afterPath="$PROJECT_DIR$/produkte_fleisch_rind.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,12 +15,12 @@
     <session id="-333172230">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="2" />
-          <entry key="project.open.time.5" value="4" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.5" value="5" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -62,8 +48,8 @@
           <entry key="dummy" value="10" />
           <entry key="html" value="688" />
           <entry key="json" value="25" />
-          <entry key="php" value="7448" />
-          <entry key="txt" value="51" />
+          <entry key="php" value="7450" />
+          <entry key="txt" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -71,8 +57,8 @@
           <entry key="CSS" value="104" />
           <entry key="HTML" value="688" />
           <entry key="JSON" value="25" />
-          <entry key="PHP" value="7448" />
-          <entry key="PLAIN_TEXT" value="61" />
+          <entry key="PHP" value="7450" />
+          <entry key="PLAIN_TEXT" value="64" />
         </counts>
       </usages-collector>
     </session>
@@ -109,12 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/products_visualizer.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="390">
+              <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -173,9 +155,9 @@
         <option value="$PROJECT_DIR$/includes/shopping_cart_handler.php" />
         <option value="$PROJECT_DIR$/shopping_cart_remover.php" />
         <option value="$PROJECT_DIR$/includes/products_template.inc.php" />
-        <option value="$PROJECT_DIR$/includes/products_visualizer.inc.php" />
         <option value="$PROJECT_DIR$/products/products.json" />
         <option value="$PROJECT_DIR$/shopping_cart_adder.php" />
+        <option value="$PROJECT_DIR$/includes/products_visualizer.inc.php" />
       </list>
     </option>
   </component>
@@ -185,7 +167,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
@@ -272,7 +254,8 @@
       <workItem from="1541056158415" duration="11667000" />
       <workItem from="1541101478006" duration="10000" />
       <workItem from="1541101511589" duration="501000" />
-      <workItem from="1541147285987" duration="18555000" />
+      <workItem from="1541147285987" duration="19476000" />
+      <workItem from="1541420641638" duration="407000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1540545821492</created>
@@ -302,17 +285,24 @@
       <option name="project" value="LOCAL" />
       <updated>1541074318873</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="idk">
+      <created>1541171725395</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1541171725395</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44833000" />
+    <option name="totallyTimeSpent" value="46161000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49911505" visible="true" weight="0.26556778" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49911505" visible="true" weight="0.20447284" />
       <window_info id="Structure" order="1" sideWeight="0.50088495" side_tool="true" weight="0.24973376" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -367,7 +357,8 @@
     <MESSAGE value="done with teil 1" />
     <MESSAGE value="done with teil 2" />
     <MESSAGE value="KNW1 added" />
-    <option name="LAST_COMMIT_MESSAGE" value="KNW1 added" />
+    <MESSAGE value="idk" />
+    <option name="LAST_COMMIT_MESSAGE" value="idk" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ratings/data.js" />
@@ -433,26 +424,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-          <folding>
-            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#form#0;n#td#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shopping_cart_remover.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shopping_cart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -463,21 +434,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/products_visualizer.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/products/products.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="2002" selection-start-column="2002" selection-end-column="2002" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping_cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopping_cart_remover.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/products_visualizer.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
         </state>
       </provider>
     </entry>
