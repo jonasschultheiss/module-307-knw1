@@ -36,6 +36,25 @@ $message = '
 ';
 mail($to, "Ihre Bestellung bei Müller's Hofladen.", $message, implode("\r\n", $headers));
 
+
+foreach ($save_data as $key => $value) {
+    if ($key === "orders") {
+        array_push($save_data[$key], array(
+            "Name" => $_POST['name'],
+            "Surname" => $_POST['surname'],
+            "Birthday" => $_POST['birthday'],
+            "Strasse" => $_POST['street'],
+            "Postleitzahl" => $_POST['plz'],
+            "Ort" => $_POST['place'],
+            "Email" => $_POST['email'],
+            "Versand" => $_POST['versand'],
+            "Total" => $total_value,
+            "Bestellung" => $_SESSION['items']
+            ));
+    }
+}
+file_put_contents("products/products.json", json_encode($save_data));
+
 session_destroy();
 
-header("Location: index.php" . $_POST['source']);
+header("Location: index.php");

@@ -89,10 +89,10 @@ if (count($_SESSION['items']) === 0) {
             <h2>Versand</h2>
             <label>
                 <input type="radio" name="versand" value="normal" required>
-            </label> B Post<br>
+            </label> B Post (+ CHF 5.00)<br>
             <label>
                 <input type="radio" name="versand" value="priority" required>
-            </label> A Post<br>
+            </label> A Post(+ CHF 10.00)<br>
             <label>
                 <input type="radio" name="versand" value="pickup" required>
             </label> Abholung<br>
