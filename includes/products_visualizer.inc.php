@@ -12,7 +12,7 @@ foreach ($products as $x => $x_value) {
                 echo '<img src="' . $product_value['image'] . '" class="shoppic"/>';
                 echo '<h2>' . $product_value['name'] . '</h2>';
                 echo '<p>' . $product_value['description'] . '</p>';
-                echo '<p>CHF ' . $product_value['price'] . '</p>';
+                echo '<p>CHF ' . number_format((float)$product_value['price'], 2, '.', '') . '</p>';
                 echo '<form action="../shopping_cart_adder.php" method="post">';
                 echo '<input style="margin-right: 5px;" type="number" name="amount" value="1" min="1" max="10">';
                 echo '<input type="hidden" name="name" value="' . $product_value['name'] . '"">';

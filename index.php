@@ -6,4 +6,3 @@ $page_content = "text_home.php";
 $page_news = true;
 //Template includen
 include("includes/template.inc.php");
-?>

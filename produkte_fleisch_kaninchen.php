@@ -8,4 +8,3 @@ $category = "rabbit_meat";
 
 //Template includen
 include("includes/products_template.inc.php");
-?>

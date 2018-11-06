@@ -1,4 +1,4 @@
-<?php
+<?php /** @noinspection PhpIncludeInspection */
 session_start();
 if(!isset($_SESSION['items'])) {
     $_SESSION['items'] = array();

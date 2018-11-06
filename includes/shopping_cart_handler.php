@@ -7,13 +7,11 @@ if (count($_SESSION['items']) === 0) {
         $rows .= '<tr>';
         $rows .= '<td style="padding: 8px 8px 8px 0; border-bottom: 1px solid gray;">' . $value['name'] . '</td>';
         $rows .= '<td style="padding: 8px 8px 8px 0; border-bottom: 1px solid gray;">' . $value['amount'] . '</td>';
-        $rows .= '<td style="padding: 8px 8px 8px 0; border-bottom: 1px solid gray;">' . $value['amount'] * $value['price'] . " CHF" . '</td>';
+        $rows .= '<td style="padding: 8px 8px 8px 0; border-bottom: 1px solid gray;">' . "CHF " . number_format((float)($value['amount'] * $value['price']), 2, '.', '') . '</td>';
         $rows .= '<td> <form action="../shopping_cart_remover.php" method="post"><input type="hidden" name="item" value="' . $value['name'] . '""><button style="width: 300px; height: 25px; background-color: lightcoral;" type="submit">Artikel entfernen</button></form></td>';
         $rows .= '<tr>';
     }
-
     ?>
-
     <div style="width: 905px; border: 1px solid #FFFFFF; border-radius: 5px; padding: 20px;">
         <h2>Artikel</h2>
         <table style="border-collapse: collapse; width: 100%;">
@@ -24,12 +22,9 @@ if (count($_SESSION['items']) === 0) {
                 <th style="padding: 8px 8px 8px 0; border-bottom: 1px solid gray; text-align: left;">Artikel entfernen
                 </th>
             </tr>
-            <?php echo $rows;
-            ?>
+            <?php echo $rows; ?>
         </table>
-        <?php
-        echo "Total: " . $total_value . "CHF";
-        ?>
+        <?php echo "Total: CHF " . number_format((float)$total_value, 2, '.', ''); ?>
         <br/>
         <br/>
         <hr/>
@@ -106,12 +101,12 @@ if (count($_SESSION['items']) === 0) {
             <br/>
             <h2>Währungsrechner</h2>
             <?php
-            echo "<p>CHF: " . $total_value . "<p/>";
+            echo "<p>CHF: " . number_format((float)$total_value, 2, '.', '') . "</p>";
             $save_data = json_decode(file_get_contents("products/products.json"), true);
             foreach ($save_data as $x => $x_value) {
                 if ($x === "currency") {
                     foreach ($x_value as $currency => $currency_value) {
-                        echo "<p>" . $currency . ": " . $currency_value * $total_value . "</p>";
+                        echo "<p>" . $currency . ": " . number_format((float)($currency_value * $total_value), 2, '.', '') . "</p>";
                     }
                 }
             }

@@ -9,4 +9,4 @@ $category = "beef";
 
 //Template includen
 include("includes/products_template.inc.php");
-?>
+

@@ -7,4 +7,3 @@ $page_news = true;
 
 //Template includen
 include("includes/template.inc.php");
-?>
