@@ -30,7 +30,7 @@ if (count($_SESSION['items']) === 0) {
         <hr/>
         <br/>
         <h2>Adresse</h2>
-        <form action="../order_finish.php" method="post">
+        <form action="../done.php" method="post">
             <p>Anrede</p>
             <label>
                 <select style="width: 300px; height: 25px" name="anrede">

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Müller's Hofladen - /** @noinspection PhpIncludeInspection */<?php print($page_kurztitel); ?></title>
+  <title>Müller's Hofladen<?php print($page_kurztitel); ?></title>
   <meta http-equiv="content-type" content="text/html; charset=utf8" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <!-- modernizr enables HTML5 elements and feature detects -->

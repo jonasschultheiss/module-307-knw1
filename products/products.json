@@ -50,52 +50,5 @@
     "Renminbi": 6.9199999999999999289457264239899814128875732421875
   },
   "email": "jonas.schultheiss3@gmail.com",
-  "orders": [
-    {
-      "Name": "Jonas Schultheiss",
-      "Surname": "Schultheiss",
-      "Birthday": "",
-      "Strasse": "Lebernring 8",
-      "Postleitzahl": "4107",
-      "Ort": "Ettingen",
-      "Email": "jonas.schultheiss3@gmail.com",
-      "Versand": "priority",
-      "Total": 1100,
-      "Bestellung": [
-        {
-          "name": "Mischpaket Rindfleisch 10 - 12 kg",
-          "price": "340",
-          "amount": 3
-        },
-        {
-          "name": "Rindfilet",
-          "price": "80",
-          "amount": "1"
-        }
-      ]
-    },
-    {
-      "Name": "Jonas Schultheiss",
-      "Surname": "Schultheiss",
-      "Birthday": "2000-08-21",
-      "Strasse": "Lebernring 8",
-      "Postleitzahl": "4107",
-      "Ort": "Ettingen",
-      "Email": "jonas.schultheiss3@gmail.com",
-      "Versand": "priority",
-      "Total": 1100,
-      "Bestellung": [
-        {
-          "name": "Mischpaket Rindfleisch 10 - 12 kg",
-          "price": "340",
-          "amount": 3
-        },
-        {
-          "name": "Rindfilet",
-          "price": "80",
-          "amount": "1"
-        }
-      ]
-    }
-  ]
+  "orders": []
 }
